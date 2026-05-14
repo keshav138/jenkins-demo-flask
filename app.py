@@ -15,7 +15,9 @@ def health():
 
 @app.route('/allgood')
 def allgood():
-    pass    
+    return jsonify({
+        'allgood':"allgood"
+    })
 
 
 if __name__ == '__main__':
